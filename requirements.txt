@@ -1,0 +1,11 @@
+python 3.8
+Flask 2.0.2
+beautifulsoup4 4.10.0
+regex 2021.11.10
+numpy 1.21.5
+seaborn 0.11.2
+scikit-learn 1.0.2
+collections2 0.3.0
+pickle5 0.0.12
+fuzzywuzzy 0.18.0
+python-Levenshtein 0.12.2

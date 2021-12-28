@@ -46,7 +46,7 @@ def predict():
                 else:
                     output = "Phishy"
             else:
-                output = "Malacious"
+                output = "Malicious"
 
     except requests.ConnectionError as exception:
 
@@ -54,11 +54,5 @@ def predict():
 
     return render_template('index.html', prediction_text='The URL is {}'.format(output))
 
-'''
-@app.route('/results', methods=['GET', 'POST'])
-def showres():
-    data = request.get_json(force=True)
-    prediction = model.predict()
-'''
 if __name__ == '__main__':
     app.run(debug=True) 
