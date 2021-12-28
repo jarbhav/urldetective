@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>URL Detective</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Url Detective</h1>
+        <p style="text-align: center;">Any link looking suspicious?</p>
+        <div class="submitlink">
+            <form style="text-align: center;" action="{{ url_for('predict') }}" method="POST">
+                <input type="text" name="suslink" placeholder="Enter URL..." required="required"/></br>
+                <input type="submit" value="Go!">
+            </form>
+            </br>
+            </br>
+            <div style="text-align: center;" class="results">
+                {{ prediction_text }}
+            </div>
+        </div>
+    </body>
+</html>
